@@ -1,0 +1,72 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "questionnaire": "Questionnaire/norton_scale_v1_0_0",
+  "status": "completed",
+  "subject": {
+    "reference": "http://hl7.org/fhir/Patient/1223",
+    "type": "Patient"
+  },
+  "authored": "2022-04-06T17:15:00+01:00",
+  "author": {
+    "reference": "http://hl7.org/fhir/Practitioner/example",
+    "type": "Practitioner"
+  },
+  "meta": {
+    "tag": [
+      {
+        "code": "norton-scale",
+        "display": "Norton Scale"
+      }
+    ]
+  },
+  "item": [
+    {
+      "linkId": "/75243-6",
+      "text": "Norton scale panel",
+      "item": [
+        {
+          "linkId": "/75244-4",
+          "text": "Physical condition",
+          "answer" : [{
+            "valueDecimal" : 2
+          }]
+        },
+        {
+          "linkId": "/75245-1",
+          "text": "Mental condition",
+          "answer" : [{
+            "valueDecimal" : 2
+          }]
+        },
+        {
+          "linkId": "/75246-9",
+          "text": "Activity",
+          "answer" : [{
+            "valueDecimal" : 2
+          }]
+        },
+        {
+          "linkId": "/75247-7",
+          "text": "Mobility",
+          "answer" : [{
+            "valueDecimal" : 3
+          }]
+        },
+        {
+          "linkId": "/75248-5",
+          "text": "Incontinence",
+          "answer" : [{
+            "valueDecimal" : 1
+          }]
+        },
+        {
+          "linkId": "/75249-3",
+          "text": "Norton scale score.total",
+          "answer" : [{
+            "valueDecimal" : 10
+          }]
+        }
+      ]
+    }
+  ]
+}

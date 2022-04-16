@@ -1,0 +1,525 @@
+{
+  "status": "draft",
+  "id" : "norton_scale_v1_0_0",
+  "resourceType": "Questionnaire",
+  "title" : "Norton Scale Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
+    ],
+    "tag": [
+      {
+        "code": "norton-scale_v1.0.0",
+        "display": "Norton Scale v1.0.0"
+      }
+    ]
+  },
+  "item": [
+    {
+      "type": "group",
+      "code": [
+        {
+          "code": "75243-6",
+          "display": "Norton scale panel",
+          "system": "http://loinc.org"
+        }
+      ],
+      "required": false,
+      "linkId": "/75243-6",
+      "text": "Norton scale panel",
+      "item": [
+        {
+          "type": "choice",
+          "code": [
+            {
+              "code": "75244-4",
+              "display": "Physical condition",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/75244-4",
+          "text": "Physical condition",
+          "answerOption": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "1"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ],
+              "valueCoding": {
+                "code": "LA8967-7",
+                "display": "Good"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "2"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ],
+              "valueCoding": {
+                "code": "LA8968-5",
+                "display": "Fair"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "3"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ],
+              "valueCoding": {
+                "code": "LA8969-3",
+                "display": "Poor"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "4"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ],
+              "valueCoding": {
+                "code": "LA21282-1",
+                "display": "Very bad"
+              }
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "code": [
+            {
+              "code": "75245-1",
+              "display": "Mental condition",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/75245-1",
+          "text": "Mental condition",
+          "answerOption": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "1"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ],
+              "valueCoding": {
+                "code": "LA9340-6",
+                "display": "Alert"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "2"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ],
+              "valueCoding": {
+                "code": "LA21279-7",
+                "display": "Apathetic"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "3"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ],
+              "valueCoding": {
+                "code": "LA6560-2",
+                "display": "Confused"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "4"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ],
+              "valueCoding": {
+                "code": "LA17666-1",
+                "display": "Stupor"
+              }
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "code": [
+            {
+              "code": "75246-9",
+              "display": "Activity",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/75246-9",
+          "text": "Activity",
+          "answerOption": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "1"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ],
+              "valueCoding": {
+                "code": "LA21285-4",
+                "display": "Ambulant"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "2"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ],
+              "valueCoding": {
+                "code": "LA21286-2",
+                "display": "Walk/help"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "3"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ],
+              "valueCoding": {
+                "code": "LA6743-4",
+                "display": "Chairbound"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "4"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ],
+              "valueCoding": {
+                "code": "LA4270-0",
+                "display": "Bedridden"
+              }
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "code": [
+            {
+              "code": "75247-7",
+              "display": "Mobility",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/75247-7",
+          "text": "Mobility",
+          "answerOption": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "1"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ],
+              "valueCoding": {
+                "code": "LA19682-6",
+                "display": "Full"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "2"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ],
+              "valueCoding": {
+                "code": "LA11910-9",
+                "display": "Slight"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "3"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ],
+              "valueCoding": {
+                "code": "LA6484-5",
+                "display": "Limited"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "4"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ],
+              "valueCoding": {
+                "code": "LA21289-6",
+                "display": "Very limited, Immobile"
+              }
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "code": [
+            {
+              "code": "75248-5",
+              "display": "Incontinence",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/75248-5",
+          "text": "Incontinence",
+          "answerOption": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "1"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 1
+                }
+              ],
+              "valueCoding": {
+                "code": "LA21291-2",
+                "display": "Not"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "2"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ],
+              "valueCoding": {
+                "code": "LA20948-8",
+                "display": "Occasional"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "3"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ],
+              "valueCoding": {
+                "code": "LA21292-0",
+                "display": "Usually-urine"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                  "valueString": "4"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ],
+              "valueCoding": {
+                "code": "LA21293-8",
+                "display": "Doubly"
+              }
+            }
+          ]
+        },
+        {
+          "type": "decimal",
+          "code": [
+            {
+              "code": "75249-3",
+              "display": "Norton scale score.total",
+              "system": "http://loinc.org"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "display": "{score}"
+              }
+            }
+          ],
+          "required": false,
+          "linkId": "/75249-3",
+          "text": "Norton scale score.total"
+        }
+      ]
+    }
+  ]
+}
